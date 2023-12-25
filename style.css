@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  background-color: blueviolet;
+}
+main {
+  text-align: center;
+  height: 70vh;
+}
+main h1 {
+  color: aqua;
+  font-family: sans-serif;
+  margin: 20px 0;
+}
+.box-container {
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  background-color: white;
+  border: 0;
+  border-radius: 10px;
+  font-size: 8vmin;
+  color: brown;
+  cursor: pointer;
+}
+.box:hover {
+  background-color: bisque;
+}
+
+#reset-btn {
+  width: 150px;
+  height: 50px;
+  background-color: greenyellow;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  color: white;
+}
+#reset-btn:hover {
+  background-color: greenyellow;
+  opacity: 0.7;
+}
+#new-game {
+  width: 150px;
+  height: 50px;
+  background-color: green;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  margin: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.winner-delcare {
+  color: #ffff;
+  font-weight: bold;
+}
+.winner-section {
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  .box {
+    height: 15vmin;
+    width: 15vmin;
+  }
+}
